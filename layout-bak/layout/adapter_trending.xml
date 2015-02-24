@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="@color/gray">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="afterDescendants"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:background="@color/orange" >
+
+        <ImageView
+            android:id="@+id/profilePic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="13dp"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/restaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Loading..."
+            android:layout_toRightOf="@+id/profilePic"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/restaurant"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@+id/profilePic"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/city"
+            android:layout_toRightOf="@+id/profilePic"
+            android:textSize="15sp" />
+
+        <RatingBar
+            android:id="@+id/rating"
+            style="@style/GrubberRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_below="@+id/address"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="1.0"
+            android:stepSize="1.0" />
+
+        <RatingBar
+            android:id="@+id/price"
+            style="@style/GrubberCashBar"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_below="@+id/rating"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="1.0"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/price"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</FrameLayout>

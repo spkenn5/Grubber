@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="6dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_background_selector"
+        android:descendantFocusability="afterDescendants" >
+
+        <TextView
+            android:id="@+id/restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="#212121"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/line_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/restaurant"
+            android:background="#dedede" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/restaurant"
+            android:paddingBottom="10dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingTop="10dp" >
+
+            <com.pkmmte.circularimageview.CircularImageView
+                android:id="@+id/profilePic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="13dp" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/profilePic"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/profilePic"
+                android:textColor="#343838"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/profilePic"
+                android:textSize="15sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/GrubberRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@+id/rating"
+                android:isIndicator="true" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rating"
+                android:layout_toRightOf="@+id/profilePic"
+                android:textSize="15sp" />
+
+            <RatingBar
+                android:id="@+id/cashBar"
+                style="@style/GrubberCashBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingBar"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/price"
+                android:isIndicator="true" />
+
+            <ImageView
+                android:id="@+id/date_icon"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_below="@+id/cashBar"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toLeftOf="@+id/city"
+                android:src="@drawable/location_arrow" />
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/cashBar"
+                android:layout_marginTop="13dp"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

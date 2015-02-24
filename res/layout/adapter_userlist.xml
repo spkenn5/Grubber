@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants"
+    android:weightSum="2" >
+
+   <!--  <View
+        android:id="@+id/notif_line"
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#c2c2c2" /> -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:clickable="false"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp" >
+
+        <com.pkmmte.circularimageview.CircularImageView
+            android:id="@+id/profilePic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="13dp" />
+
+        <!-- <LinearLayout
+            android:id="@+id/LLcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profilePic"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#2e2a2a"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/aboutme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:textColor="#808080"
+                android:textSize="14sp" />
+        </LinearLayout> -->
+        
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profilePic"
+            android:textColor="#2e2a2a"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+ 
+        <TextView
+            android:id="@+id/aboutme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/profilePic"
+            android:layout_toLeftOf="@+id/btnfollow"
+            android:textColor="#808080"
+            android:textSize="14sp" />
+
+        <ToggleButton
+            android:id="@+id/btnfollow"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:background="@drawable/toggle_bg"
+            android:textOff="Stalk"
+            android:textOn="Leave"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

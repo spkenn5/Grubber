@@ -1,0 +1,61 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+
+    <style name="pbDialogStyle" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <!-- <item name="android:textColor">@android:color/black</item> -->
+    </style>
+
+    <style name="GrubberRatingBar" parent="@android:style/Widget.RatingBar">
+    <item name="android:progressDrawable">@drawable/ratingbar</item>
+    <item name="android:minHeight">5dip</item>
+    <item name="android:maxHeight">5dip</item>
+    </style>
+
+    <style name="GrubberCashBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/cashbar</item>
+        <item name="android:minHeight">5dip</item>
+    <item name="android:maxHeight">5dip</item>
+    </style>
+    
+    <style name="GrubberRatingBarComment" parent="@android:style/Widget.RatingBar">
+    <item name="android:progressDrawable">@drawable/ratingbar_comment</item>
+    <item name="android:minHeight">4dip</item>
+    <item name="android:maxHeight">4dip</item>
+    </style>
+
+    <style name="GrubberCashBarComment" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/cashbar_comment</item>
+        <item name="android:minHeight">4dip</item>
+    <item name="android:maxHeight">4dip</item>
+    </style>
+
+   <style name="GrubberEditText" parent="@android:style/Widget.EditText">
+       <item name="android:textCursorDrawable">@null</item>
+   </style>
+   
+   <style name="GrubberDivider">
+       <item name="android:layout_width">match_parent</item>
+       <item name="android:layout_height">1dp</item>
+       <item name="android:background">@android:drawable/divider_horizontal_textfield</item>
+   </style>
+    
+</resources>  

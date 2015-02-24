@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- Search, should appear as action button -->
+    <item android:id="@+id/action_refresh"
+          android:icon="@drawable/refresh2"
+          android:title="@string/grubber_ar_refresh"
+          android:showAsAction="ifRoom" />
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_back"
+        android:icon="@drawable/back"
+          android:title="@string/grubber_ar_back"
+          android:showAsAction="ifRoom" />
+</menu>

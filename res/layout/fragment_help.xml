@@ -1,0 +1,255 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/skripsi.com.grubber"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llAddReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/howReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/grubber_help_review"
+                android:padding="7dp"
+                android:textSize="17sp"
+                android:textColor="@color/main_tab_black"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/answerReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="13dp"
+                android:textColor="@color/main_tab_lightblack"
+                android:text="@string/gruber_help_answer_review"
+                android:textSize="15sp"
+                android:typeface="serif"
+                android:textStyle="italic" />
+        </LinearLayout>
+        
+        <View style="@style/GrubberDivider"/>
+
+        <LinearLayout
+            android:id="@+id/llSearchRest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/searchRest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/grubber_help_restaurant"
+                
+                android:padding="7dp"
+                android:textSize="17sp"
+                android:textColor="@color/main_tab_black"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/answerRest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="13dp"
+                android:textColor="@color/main_tab_lightblack"
+                android:text="@string/grubber_help_answer_restaurant"
+                android:textSize="15sp"
+                android:typeface="serif"
+                android:textStyle="italic" />
+        </LinearLayout>
+        
+        <View style="@style/GrubberDivider"/>
+
+        <LinearLayout
+            android:id="@+id/llAddComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/addComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/grubber_help_comment"
+                
+                android:padding="7dp"
+                android:textSize="17sp"
+                android:textColor="@color/main_tab_black"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/answerComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="13dp"
+                android:textColor="@color/main_tab_lightblack"
+                android:text="@string/grubber_help_answer_comment"
+                android:textSize="15sp"
+                android:typeface="serif"
+                android:textStyle="italic" />
+        </LinearLayout>
+        
+        <View style="@style/GrubberDivider"/>
+
+        <LinearLayout
+            android:id="@+id/llsearchUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/searchUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/grubber_help_search"
+                
+                android:padding="7dp"
+                android:textSize="17sp"
+                android:textColor="@color/main_tab_black"
+                android:background="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/answerSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="13dp"
+                android:textColor="@color/main_tab_lightblack"
+                android:text="@string/grubber_help_answer_search"
+                android:textSize="15sp"
+                android:typeface="serif"
+                android:textStyle="italic" />
+        </LinearLayout>
+        
+        <View style="@style/GrubberDivider"/>
+
+        <LinearLayout
+            android:id="@+id/llTrending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/findTrending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/grubber_help_trending"
+                
+                android:padding="7dp"
+                android:textSize="17sp"
+                android:textColor="@color/main_tab_black"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/answerTrending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="13dp"
+                android:textColor="@color/main_tab_lightblack"
+                android:text="@string/grubber_help_answer_trending"
+                android:textSize="15sp"
+                android:typeface="serif"
+                android:textStyle="italic" />
+        </LinearLayout>
+        
+        <View style="@style/GrubberDivider"/>
+
+        <LinearLayout
+            android:id="@+id/llShareFB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/shareFB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/grubber_help_share"
+                
+                android:padding="7dp"
+                android:textSize="17sp"
+                android:textColor="@color/main_tab_black"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/answerShare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="13dp"
+                android:textColor="@color/main_tab_lightblack"
+                android:text="@string/grubber_help_answer_share"
+                android:textSize="15sp"
+                android:typeface="serif"
+                android:textStyle="italic" />
+        </LinearLayout>
+        
+        <View style="@style/GrubberDivider"/>
+
+        <LinearLayout
+            android:id="@+id/llAddRest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/addRest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/grubber_help_backend"
+                android:padding="7dp"
+                android:textSize="17sp"
+                android:textColor="@color/main_tab_black"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/answerAddRest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="3dp"
+                android:textColor="@color/main_tab_lightblack"
+                android:text="@string/grubber_help_answer_backend"
+                android:textSize="15sp"
+                android:typeface="serif"
+                android:textStyle="italic" />
+            <TextView 
+                android:id="@+id/emailRest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click here"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:textColor="@color/main_tab_lightblack"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="13dp"
+                android:typeface="serif"/>
+        </LinearLayout>
+        
+        <View style="@style/GrubberDivider"/>
+    </LinearLayout>
+
+</ScrollView>

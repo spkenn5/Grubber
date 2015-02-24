@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dip" >
+
+    <TextView
+        android:id="@+id/mainLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="Name"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/secondLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainLine"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="City"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/thirdLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondLine"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Description"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvRate"
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:layout_below="@+id/thirdLine"
+        android:gravity="center"
+        android:text="Rating: " />
+
+    <RatingBar
+        android:id="@+id/fourthline"
+        style="@style/GrubberRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:layout_below="@+id/thirdLine"
+        android:layout_toRightOf="@+id/tvRate"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="1.0"
+        android:stepSize="1.0" />
+
+    <TextView
+        android:id="@+id/tvCash"
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:layout_below="@+id/tvRate"
+        android:gravity="center"
+        android:text="Cash Value: " />
+
+    <RatingBar
+        android:id="@+id/fifthline"
+        style="@style/GrubberCashBar"
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:layout_below="@+id/tvRate"
+        android:layout_toRightOf="@+id/tvCash"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="1.0"
+        android:stepSize="1.0" />
+
+</RelativeLayout>

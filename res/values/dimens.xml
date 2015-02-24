@@ -1,0 +1,26 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">5dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="splash_horizontal_padding">15dp</dimen>
+    <dimen name="splash_vertical_margin">15dp</dimen>
+    <dimen name="actionbar_height">60dp</dimen>
+
+    <color android:id="@+id/grey_bg" name="grey_bg" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content">#EDEDED</color>
+    <color android:id="@+id/green_tosca" name="green_tosca">#2ED1A2</color>
+    <color android:id="@+id/main_tab_black" name="main_tab_black">#242525</color>
+    <color android:id="@+id/main_tab_green" name="main_tab_green">#3FA999</color>
+    <color android:id="@+id/main_tab_lightblack" name="main_tab_lightblack">#2A2B2D</color>
+    <color android:id="@+id/splash_bg" name="splash_bg">#14B694</color>
+    <color android:id="@+id/progressbar_1" name="progressbar_1">#2bbfcc</color>
+    <color android:id="@+id/progressbar_2" name="progressbar_2">#e0d900</color>
+    <color android:id="@+id/progressbar_3" name="progressbar_3">#45c975</color>
+    <color android:id="@+id/progressbar_4" name="progressbar_4">#f05b5b</color>
+    <color android:id="@+id/badge_bg" name="badge_bg">#EF6756</color>
+    <color android:id="@+id/ratingbar" name="ratingbar">#fad676</color>
+    <color android:id="@+id/cashbar" name="cashbar">#42cfa9</color>
+</resources>
+

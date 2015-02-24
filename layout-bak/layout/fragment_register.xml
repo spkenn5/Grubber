@@ -1,0 +1,170 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registration_scroll_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/green_tosqa"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:context=".RegisterFragment" >
+
+        <LinearLayout
+            android:id="@+id/testing"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <TextView
+                android:id="@+id/tvRegistrationPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:text="@string/hello_world"
+                android:textColor="@color/gray" />
+
+            <ImageButton
+                android:id="@+id/ibRegistrationPhoto"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="Profile Pic"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_launcher_new" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRegistrationFields"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/testing"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvRegistrationEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/testing"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:textColor="@color/gray"
+                android:text="Email" />
+
+            <EditText
+                android:id="@+id/etRegistrationEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email"
+                android:textColor="@color/gray"
+                android:inputType="text" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvRegistrationPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:text="Password" />
+
+            <EditText
+                android:id="@+id/etRegistrationPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:ems="10"
+                android:inputType="textPassword" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvRegistrationPassword2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm Password" />
+
+            <EditText
+                android:id="@+id/etRegistrationPassword2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvRegistrationFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name" />
+
+            <EditText
+                android:id="@+id/etRegistrationFullName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+       
+
+            <TextView
+                android:id="@+id/tvRegistrationUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username" />
+
+            <EditText
+                android:id="@+id/etRegistrationUserName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvRegistrationAboutMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About me" />
+
+            <EditText
+                android:id="@+id/etRegistrationAboutMe"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Who are you?"
+                android:inputType="textMultiLine" >
+            </EditText>
+
+          
+
+            <LinearLayout
+                android:id="@+id/llTNC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+                <CheckBox
+                    android:id="@+id/cbRegistrationAgreeTNC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top" />
+
+                <TextView
+                    android:id="@+id/tvRegistrationTNC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:linksClickable="true"
+                    android:paddingLeft="5dp"
+                    android:text="@string/hello_world" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18sp"
+        android:gravity="center_horizontal"
+        android:text="Please write your review to help others\n about this particular restaurant"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/LLNavAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/etReviewBox"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:text="Write review here..."
+                android:textColor="@android:color/black" />
+
+            <RatingBar
+                android:id="@+id/rbRate"
+                style="@style/GrubberRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_gravity="center_horizontal"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:rating="1.0"
+                android:stepSize="1.0" />
+
+            <RatingBar
+                android:id="@+id/rbCash"
+                style="@style/GrubberCashBar"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_gravity="center_horizontal"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:rating="1.0"
+                android:stepSize="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_gravity="bottom"
+        android:text="Post Review"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/skripsi.com.grubber"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/singlePost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_tab_black"
+        android:paddingBottom="20dp" >
+
+        <ImageView
+            android:id="@+id/profilePic"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"
+            />
+
+        <TextView
+            android:id="@+id/restaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profilePic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/restaurant"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:background="#353638"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textColor="#8c8c8c"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/GrubberRatingBarComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/review"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="17dp"
+            android:isIndicator="true" />
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/review"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/ratingBar"
+            android:text="@string/grubber_rating_text"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/ratingValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/review"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/ratingBar"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+        <RatingBar
+            android:id="@+id/priceBar"
+            style="@style/GrubberCashBarComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:isIndicator="true" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/priceBar"
+            android:text="@string/grubber_price_text"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/priceValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/priceBar"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/triangle_divider"
+        android:layout_width="27dp"
+        android:layout_height="13dp"
+        android:layout_below="@+id/singlePost"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/arrow_down" />
+
+</RelativeLayout>

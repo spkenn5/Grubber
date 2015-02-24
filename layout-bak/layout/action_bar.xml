@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+    
+    <ImageView 
+        android:id="@+id/logo_app"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:src="@drawable/ic_launcher_new"/>
+    
+    <TextView
+        android:id="@+id/title_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="GRUBBER"
+        android:textSize="20sp"
+        android:textColor="@color/grey_bg" />
+    
+    <ImageView 
+        android:id="@+id/refresh_btn"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:src="@drawable/refresh"/>
+
+    
+</RelativeLayout>

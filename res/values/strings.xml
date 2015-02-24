@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Grubber</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_help">Help</string>
+    <string name="action_logout">Logout</string>
+    <string name="PARSE_APP_ID">2dJH5iHjG7p8bt204AvSnTY7FOaBO7yukyqDlU8F</string>
+    <string name="PARSE_CLIENT_KEY">CD4pF6xy6PJ5TtUaJ4MWj3aqbXO45lM6pmPO7Ovk</string>
+    <string name="GOOGLE_MAP_API2">AIzaSyCARHQM6Y1NwGyLftnWOWNdUcSAWPiHEqE</string>
+    <string name="app_id">696866727099220</string>
+    <string name="grubber_main_register">Sign Up</string>
+    <string name="grubber_registration_agree_tnc_statement">I accept Grubber\'s %1$s and %2$s</string>
+    <string name="grubber_registration_agree_tnc_tos">Terms of Service</string>
+    <string name="grubber_registration_agree_tnc_pp">Privacy Policy</string>
+    <string name="grubber_registration_agree_tncc_title_tos">Terms of Service</string>
+    <string name="grubber_registration_agree_tncc_title_pp">Privacy Policy</string>
+    <string name="grubber_registration_agree_tncc_error">Oops, there is a problem reading the T&amp;C contents</string>
+    <string name="grubber_registration_agree_tncc_ok">OK</string>
+       <string name="grubber_registration_profile_picture_label">Choose Picture</string>
+    <string name="grubber_registration_username_required">Username is required</string>
+    <string name="grubber_registration_username_taken">Username is taken, please use something else</string>
+    <string name="grubber_registration_email_invalid">Please specify a valid email</string>
+    <string name="grubber_registration_email">Email is required</string>
+    <string name="grubber_registration_password_required">Password must be at least 6 characters, and not using any whitespace character</string>
+    <string name="grubber_main_password_login_failed">Your Email address and password do not match</string>
+    <string name="grubber_registration_password2_mismatch">Password does not match</string>
+    <string name="grubber_registration_full_name_label">Your full name</string>
+    <string name="grubber_registration_full_name_required">Full name must be at least 3 characters but not more than 33 characters long</string>
+    <string name="grubber_registration_full_name_invalid">Full name contains invalid character</string>
+    <string name="grubber_registration_screenname_required">Nickname must be at least 3 characters but not more than 33 characters long</string>
+    <string name="grubber_registration_screenname_invalid">Nickname contains invalid character</string>
+    <string name="grubber_registration_profile_picture_invalid">The maximum size of image file size is 2 MB</string>
+    <string name="grubber_registration_profile_picture_warning">Grubber will be more fun if you set your profile picture. Do you want to set your profile picture?</string>
+    <string name="grubber_registration_profile_picture_warning_yes">Yes!!</string>
+    <string name="grubber_registration_profile_picture_warning_no">Not now</string>
+    <string name="grubber_backend_error">Opps, we encountered server error. Please try again later</string>
+    <string name="grubber_profile_tab_myprofile">About Me</string>
+    <string name="grubber_profile_tab_profile">About me</string>
+    <string name="grubber_rating_text">Rating</string>
+    <string name="grubber_price_text">Price</string>
+    <string name="comment_text">Add Comment..</string>
+    <string name="button_send">Send</string>
+    <string name="grubber_help_review">I. Add a Review</string>
+    <string name="gruber_help_answer_review">Go to a restaurant page, find the pen icon, fill out the necessary information such as Review Content, Rate Rating and Price, after doing so click Post Review and you will be redirected back to the Timeline</string>
+    <string name="grubber_help_restaurant">II. Search a Restaurant</string>
+    <string name="grubber_help_answer_restaurant">Find the Grub tab, click on it and enjoy our augmented reality to find restaurant nearby. Turning on GPS will increase device position and better accuracy to locate nearby restaurants</string>
+    <string name="grubber_help_comment">III. Add a Comment</string>
+    <string name="grubber_help_answer_comment">Go to a review page, look at the bottom of the screen and you will find a textbox and a send button to submit after completing a comment</string>
+    <string name="grubber_help_search">IV. Search and Follow User</string>
+    <string name="grubber_help_answer_search">Go to profile page, fill the textbox and click on the search icon to process the search. After getting search result, click on Stalk to stalk a user and start getting notification about designated user and click Leave to leave a user and stop all notification about designated user</string>
+    <string name="grubber_help_trending">V. Find Trending Restaurant</string>
+    <string name="grubber_help_answer_trending">Go to Trending tab, click on 3 different category, Rate will result top 10 restaurant based on Ratings, Cash will result top 10 restaurants based on Price and Popular will result top 10 restaurants with the most review and visit</string>
+    <string name="grubber_help_share">VI. Share Review to Facebook</string>
+    <string name="grubber_help_answer_share">To share a review to facebook, simply just hold the desired review for 1 to 2 seconds and it will direct you to your facebook app and reconfirm the post. You are required to have Facebook App in order to use this feature.</string>
+    <string name="grubber_help_backend">VII. Add a Restaurant</string>
+    <string name="grubber_help_answer_backend">To add a new restaurant, you will need to inquire a request to admin, after approval you will be guided using Grubber Backend App.</string>
+    <string name="grubber_quit">Leaving Grubber</string>
+    <string name="grubber_confirm_quit">Do you really want to go?</string>
+    <string name="grubber_quit_yes">Yes</string>
+    <string name="grubber_quit_no">No</string>
+    
+
+    <plurals name="grubber_restaurant_reviews">
+        <item quantity="one">%s REVIEW</item>
+        <item quantity="other">%s REVIEWS</item>
+    </plurals>
+    <plurals name="grubber_user_review">
+        <item quantity="one">%s REVIEW</item>
+        <item quantity="other">%s REVIEWS</item>
+    </plurals>
+    <plurals name="grubber_user_stalk">
+        <item quantity="one">%s STALKING </item>
+        <item quantity="other">%s STALKING</item>
+    </plurals>
+    <plurals name="grubber_user_stalked">
+        <item quantity="one">%s STALKER</item>
+        <item quantity="other">%s STALKERS</item>
+    </plurals>
+
+    <item name="tag_bitmap_worker" type="id"/>
+
+    <string name="title_facebook_login">Facebook Login</string>
+    <string name="grubber_ar_refresh">Refresh</string>
+    <string name="grubber_restaurant_addreview">Write Review</string>
+    <string name="grubber_ar_back">Back</string>
+
+
+
+
+</resources>

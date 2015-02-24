@@ -1,0 +1,214 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/skripsi.com.grubber"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_tab_black"
+        android:padding="11dp" >
+
+        <com.pkmmte.circularimageview.CircularImageView
+            android:id="@+id/ibProfilePhoto"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/add_image"
+            app:border="true"
+            app:border_color="@color/main_tab_lightblack"
+            app:border_width="2dp" />
+
+        <LinearLayout
+            android:id="@+id/llProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:layout_toRightOf="@+id/ibProfilePhoto"
+            android:orientation="vertical" >
+			
+            <LinearLayout 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal">
+                
+            <TextView
+                android:id="@+id/tvFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="loading"
+                android:textColor="@color/grey_bg"
+                android:textSize="18sp" />
+			
+            <TextView 
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_bg"
+                android:textSize="14sp"
+                />
+            
+            </LinearLayout>
+            
+            <TextView
+                android:id="@+id/tvAboutMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:text="loading"
+                android:textColor="@color/grey_bg"
+                android:textStyle="italic"
+                android:typeface="serif" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- <RelativeLayout
+        android:id="@+id/rlSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_tab_black"
+        android:layout_below="@+id/llProfileName"
+        android:layout_gravity="right" >
+
+        <ImageView
+            android:id="@+id/Btnhelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/help" />
+
+        <ImageView
+            android:id="@+id/BtnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Btnhelp"
+            android:src="@drawable/logout" />
+
+        <ImageView
+            android:id="@+id/BtnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/BtnLogout"
+            android:src="@drawable/setting" />
+    </RelativeLayout> -->
+
+    <!--<LinearLayout
+        android:id="@+id/LLsearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/showSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_tab_green"
+            android:gravity="center_horizontal"
+            android:text="Search"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />-->
+
+         
+   <!--  </LinearLayout> -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+    
+        <Button
+            android:id="@+id/tvUserReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/main_tab_lightblack"
+            android:gravity="center"
+            android:text="@plurals/grubber_user_review"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+        
+        <Button
+            android:id="@+id/tvUserStalk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/main_tab_lightblack"
+            android:gravity="center"
+            android:text="@plurals/grubber_user_stalk"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/tvUserStalked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/main_tab_lightblack"
+            android:gravity="center"
+            android:text="@plurals/grubber_user_stalked"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        
+    </LinearLayout>
+    
+    <LinearLayout
+            android:id="@+id/searchField"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF" >
+      
+            <EditText
+                android:id="@+id/ETsearch"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_weight="1"
+                android:hint="Search user..."
+                android:cursorVisible="true"
+                android:inputType="text"
+                style="@style/GrubberEditText"
+                android:textSize="14sp"
+                android:background="#FFFFFF"
+                android:imeOptions="actionSearch"
+                android:textColor="#000000" />
+            
+      <View style="@style/GrubberDivider"/>
+      
+        </LinearLayout> 
+      
+
+    <LinearLayout
+        android:id="@+id/LLlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/main_tab_lightblack"
+        android:showDividers="beginning|middle"
+        android:orientation="vertical" >
+        
+        <!-- <TextView
+                android:id="@+id/tvSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="#FFFFFF"
+                android:textColor="#000000"/> -->
+        
+        <ListView
+            android:id="@+id/lvUserProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

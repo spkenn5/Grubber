@@ -1,0 +1,225 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registration_scroll_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:overScrollMode="never"
+    android:fillViewport="true" xmlns:app="http://schemas.android.com/apk/res/skripsi.com.grubber">
+
+   <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_bg"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        tools:context=".RegisterFragment" >
+            
+           <TextView
+               android:id="@+id/tvRegistrationPhoto"
+               android:layout_width="match_parent"
+               android:layout_height="83dp"
+               android:gravity="center_horizontal"
+               android:paddingTop="10dp"
+               android:layout_centerHorizontal="true"
+               android:background="#546066"
+               android:textSize="19sp"
+               android:text="Create Account" />
+
+           <!-- <ImageButton
+               android:id="@+id/ibRegistrationPhoto"
+               android:layout_width="24dp"
+               android:layout_height="24dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginBottom="10dp"
+               android:contentDescription="Profile Pic"
+               android:scaleType="fitCenter"
+               android:text="@string/grubber_registration_profile_picture_label"
+               android:src="@drawable/ic_launcher_new" /> -->
+           
+           <com.pkmmte.circularimageview.CircularImageView
+               android:id="@+id/gambar"
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="45dp"
+               android:scaleType="centerCrop"
+               android:src="@drawable/add_image"
+               app:border="true"
+               app:border_color="@color/grey_bg"
+               app:border_width="5dp"
+			/>
+
+		<LinearLayout 
+		    android:id="@+id/editext_box"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/gambar"
+		    android:layout_centerHorizontal="true"
+		    android:orientation="vertical"
+		    android:layout_margin="21dp">
+
+		   
+           <EditText
+               android:id="@+id/etRegistrationUserName"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="7dp"
+               android:padding="11dp"
+               android:ems="10"
+               android:background="#FFFFFF"
+               android:hint="Username"
+               android:textSize="15sp"
+               android:textColor="#546066"
+               style="@style/GrubberEditText"
+               android:inputType="textPersonName" >
+           </EditText>
+            
+           <EditText
+               android:id="@+id/etRegistrationFullName"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="7dp"
+               android:padding="11dp"
+               android:ems="10"
+               android:background="#FFFFFF"
+               android:hint="Full Name"
+               android:textSize="15sp"
+               android:textColor="#546066"
+               style="@style/GrubberEditText"
+               android:inputType="textPersonName" />
+
+           <EditText
+               android:id="@+id/etRegistrationPassword"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="7dp"
+               android:padding="11dp"
+               android:ems="10"
+               android:background="#FFFFFF"
+               android:hint="Password"
+               android:fontFamily="sans-serif"
+               android:textSize="15sp"
+               android:textColor="#546066"
+               style="@style/GrubberEditText"
+               android:inputType="textPassword" >
+           </EditText>
+
+           <EditText
+               android:id="@+id/etRegistrationPassword2"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="7dp"
+               android:padding="11dp"
+               android:ems="10"
+               android:background="#FFFFFF"
+               android:hint="Confirm Password"
+               android:fontFamily="sans-serif"
+               android:textSize="15sp"
+               android:textColor="#546066"
+               style="@style/GrubberEditText"
+               android:inputType="textPassword" >
+           </EditText>
+
+
+		   <EditText
+               android:id="@+id/etRegistrationEmail"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="7dp"
+               android:padding="11dp"
+               android:ems="10"
+               android:background="#FFFFFF"
+               android:hint="Email"
+               android:textSize="15sp"
+               android:textColor="#546066"
+               style="@style/GrubberEditText"
+               android:inputType="textEmailAddress" >
+           </EditText>	
+
+
+           <EditText
+               android:id="@+id/etRegistrationAboutMe"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="7dp"
+               android:padding="11dp"
+               android:ems="10"
+               android:background="#FFFFFF"
+               android:hint="About me"
+               android:textColor="#546066"
+               android:textSize="15sp"
+               style="@style/GrubberEditText"
+               android:inputType="textMultiLine" >
+           </EditText>
+
+         </LinearLayout>
+		
+		<!-- <LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_marginLeft="21dp"
+		    android:layout_below="@id/editext_box">
+           
+           <CheckBox
+               android:id="@+id/cbRegistrationAgreeTNC"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="#FFFFFF"
+               android:layout_gravity="center_vertical" />
+
+           <TextView
+               android:id="@+id/tvRegistrationTNC"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:layout_marginLeft="5dp"
+               android:clickable="true"
+               android:linksClickable="true"
+               android:paddingLeft="5dp"
+               android:textColor="#546066"
+               android:text="Confirm Submit" />
+           </LinearLayout> -->
+           
+           <LinearLayout
+            android:id="@+id/LLUserAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editext_box"
+            android:layout_margin="21dp"
+            android:orientation="vertical" >
+			
+            
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:padding="15dp"
+                android:background="#37baa0"
+                android:textColor="#e6eaeb"
+                android:textSize="19sp"
+                android:text="submit" />
+            
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:padding="15dp"
+                android:background="#546066"
+                android:textColor="#e6eaeb"
+                android:textSize="19sp"
+                android:text="cancel" />
+
+            
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
