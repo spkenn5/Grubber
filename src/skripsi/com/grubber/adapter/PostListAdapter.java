@@ -116,29 +116,6 @@ public class PostListAdapter extends BaseAdapter {
 
     // profilePic.setImageBitmap(RoundImage.getRoundedShape(ppBitmap));
 
-    // Listen for ListView Item Click
-    // view.setOnClickListener(new OnClickListener() {
-    //
-    // @Override
-    // public void onClick(View arg0) {
-    // // TODO Auto-generated method stub
-    // // Send single item click data to SingleItemView Class
-    // Intent intent = new Intent(context, skripsi.com.grubber.timeline.Comment.class);
-    // intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-    // intent.putExtra("reviewId", mPost.get(position).getObjectId());
-    //
-    // if (mPost.get(position).getCreatedBy().getObjectId()
-    // .equals(User.getCurrentUser().getObjectId())) {
-    // intent.putExtra("commentStatus", "Read");
-    // Log.d("commentStatus", "ReadAll");
-    // } else {
-    // intent.putExtra("commentStatus", "Unread");
-    // Log.d("commentStatus", "NoAccess");
-    // }
-    // context.startActivity(intent);
-    // }
-    // });
-
     return view;
   }
 

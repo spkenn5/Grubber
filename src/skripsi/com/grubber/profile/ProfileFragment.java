@@ -14,6 +14,7 @@ import skripsi.com.grubber.dao.UserDao;
 import skripsi.com.grubber.image.ImageLoader;
 import skripsi.com.grubber.model.Activity;
 import skripsi.com.grubber.model.User;
+import skripsi.com.grubber.timeline.Comment;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -485,6 +486,27 @@ public class ProfileFragment extends Fragment implements
         }
         // initialize UPA
         mAdapter = new PostListAdapter(getActivity(), mReviews);
+        lvList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+          @Override
+          public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+            // TODO Auto-generated method stub
+            // Send single item click data to SingleItemView Class
+            Intent intent = new Intent(getActivity(), Comment.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.putExtra("reviewId", mReviews.get(arg2).getObjectId());
+
+            if (mReviews.get(arg2).getCreatedBy().getObjectId()
+                .equals(User.getCurrentUser().getObjectId())) {
+              intent.putExtra("commentStatus", "Read");
+              Log.d("commentStatus", "ReadAll");
+            } else {
+              intent.putExtra("commentStatus", "Unread");
+              Log.d("commentStatus", "NoAccess");
+            }
+            startActivity(intent);
+          }
+        });
         lvList.setAdapter(mAdapter);
       }
     }
