@@ -50,7 +50,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -668,7 +667,7 @@ public class GMapActivity extends FragmentActivity implements LocationListener,
           // TODO Auto-generated method stub
           googleMap.addMarker(new MarkerOptions()
               .position(new LatLng(arg0.getLatitude(), arg0.getLongitude())).title("You are here")
-              .icon(BitmapDescriptorFactory.fromResource(R.drawable.currloc)));
+              .icon(BitmapDescriptorFactory.fromResource(R.drawable.my_location)));
         }
       });
     }
@@ -810,9 +809,6 @@ public class GMapActivity extends FragmentActivity implements LocationListener,
       tvTitle.setText(marker.getTitle());
       TextView tvSnippet = ((TextView) myContentsView.findViewById(R.id.snippet));
       tvSnippet.setText(marker.getSnippet());
-
-      RatingBar rbCash = ((RatingBar) myContentsView.findViewById(R.id.rbCash));
-      RatingBar rbRate = ((RatingBar) myContentsView.findViewById(R.id.rbRate));
 
       return myContentsView;
     }

@@ -52,40 +52,5 @@
             android:textSize="10dp" />
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/RLimage4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal" >
-
-        <RatingBar
-            android:id="@+id/rbCash"
-            style="@style/GrubberCashBarComment"
-            android:layout_width="wrap_content"
-            android:layout_height="30sp"
-            android:layout_gravity="center_horizontal"
-            android:isIndicator="true"
-            android:numStars="5"
-            android:rating="1.0"
-            android:stepSize="1.0" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/RLimage5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal" >
-
-        <RatingBar
-            android:id="@+id/rbRate"
-            style="@style/GrubberRatingBarComment"
-            android:layout_width="wrap_content"
-            android:layout_height="30sp"
-            android:layout_gravity="center_horizontal"
-            android:isIndicator="true"
-            android:numStars="5"
-            android:rating="1.0"
-            android:stepSize="1.0" />
-    </RelativeLayout>
 
 </LinearLayout>
